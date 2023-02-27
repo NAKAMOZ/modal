@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Arnoma Medya" />
+    <title>Arnoma Medya</title>
+
+    <!-- Font Open Sans Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" defer />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" defer />
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="dist/css/normalize.min.css" defer />
+
+    <!-- My CSS -->
+    <!-- <link rel="stylesheet" href="dist/css/style.css" defer /> -->
+    <link rel="stylesheet" href="dist/css/step-form.css" defer />
+  </head>
+  <body>
+    <!-- Progress Bar Start -->
+    <section id="progress-bar-section">
+      <div class="container">
+        <div id="progress-bar-percentage">0%</div>
+        <div id="progress-bar-background">
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Progress Bar Finish -->
+
+    <!-- Step Form Start -->
+    <section id="step-form-section">
+      <div id="step-form">
+        <div class="step active" id="step1">
+          <h2>Hangi konularda yardıma ihtiyacınız var?</h2>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="social-radio" value="Sosyal Medya" />
+            <label for="social-radio" class="hizmet-radio">
+              Sosyal Medya
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="influencer-radio" value="Influencer Marketing" />
+            <label for="influencer-radio" class="hizmet-radio">
+              Influencer Marketing
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="konvansiyonel-radio" value="Konvansiyonel Reklamlar" />
+            <label for="konvansiyonel-radio" class="hizmet-radio">
+              Konvansiyonel Reklamlar
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="mobil-radio" value="Mobil Strateji" />
+            <label for="mobil-radio" class="hizmet-radio">
+              Mobil Strateji
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="dijital-radio" value="Dijital Strateji" />
+            <label for="dijital-radio" class="hizmet-radio">
+              Dijital Strateji
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="social-strategy-radio" value="Sosyal Medya Stratejisi" />
+            <label for="social-strategy-radio" class="hizmet-radio">
+              Sosyal Medya Stratejisi
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="urun-radio" value="Ürün Pazarlama Stratejisi" />
+            <label for="urun-radio" class="hizmet-radio">
+              Ürün Pazarlama Stratejisi
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="ihracat-radio" value="E-İhracat & E-İthalat" />
+            <label for="ihracat-radio" class="hizmet-radio">
+              E-İhracat & E-İthalat
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="site-radio" value="Web Site" />
+            <label for="site-radio" class="hizmet-radio">
+              Web Site
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="ticaret-radio" value="E-Ticaret" />
+            <label for="ticaret-radio" class="hizmet-radio">
+              E-Ticaret
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="cloud-radio" value="Bulut Yazılımlar" />
+            <label for="cloud-radio" class="hizmet-radio">
+              Bulut Yazılımlar
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="ui-ux-radio" value="UI/UX" />
+            <label for="ui-ux-radio" class="hizmet-radio">
+              UI/UX
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="kampanya-radio" value="Kampanya Konsepti & Tasarımı" />
+            <label for="kampanya-radio" class="hizmet-radio">
+              Kampanya Konsepti & Tasarımı
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="video-radio" value="Video Prodüksüyon" />
+            <label for="video-radio" class="hizmet-radio">
+              Video Prodüksüyon
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="social-management-radio" value="Sosyal Medya Yönetimi" />
+            <label for="social-management-radio" class="hizmet-radio">
+              Sosyal Medya Yönetimi
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="seo-radio" value="SEO" /><label for="seo-radio" class="hizmet-radio">
+              SEO
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="production-planning-radio" value="Üretim Planlama & Süreç Yönetimi" />
+            <label for="production-planning-radio" class="hizmet-radio">
+              Üretim Planlama & Süreç Yönetimi
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="re-radio" value="RE Organizasyon" />
+            <label for="re-radio" class="hizmet-radio">
+              RE Organizasyon
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="market-search-radio" value="Pazar Araştırması" />
+            <label for="market-search-radio" class="hizmet-radio">
+              Pazar Araştırması
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="branding-radio" value="Markalaşma" />
+            <label for="branding-radio" class="hizmet-radio">
+              Markalaşma
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+          <div class="radio-button">
+            <input type="checkbox" name="service[]" id="strategic-planning-radio" value="Stratejik Planlama" />
+            <label for="strategic-planning-radio" class="hizmet-radio">
+              Stratejik Planlama
+              <img src="dist/img/icon/check-icon.svg" alt="check" width="15px" />
+            </label>
+          </div>
+        </div>
+        <div class="step" id="step2">
+          <h2>Şirket Adınız</h2>
+          <input type="text" placeholder="örn:Arnoma" required="" id="sirket" />
+          <div class="warning-text">Noksan karakter</div>
+        </div>
+        <div class="step" id="step3">
+          <h2>Email</h2>
+          <input type="email" placeholder="örn:info@arnoma.com.tr" required="" id="email" />
+          <div class="warning-text">Alan doğru şekilde doldurulmamış</div>
+        </div>
+        <div class="step" id="step4">
+          <h2>Telefon Numaranız</h2>
+          <input type="text" placeholder="örn:0544444..." required="" id="tel" />
+          <div class="warning-text">Noksan karakter</div>
+        </div>
+        <div class="step" id="step5">
+          <h2>Talebiniz hakkında eklemek istedikleriniz var mı?</h2>
+          <textarea name="talep-mesaj" id="talep-mesaj" cols="30" rows="10" placeholder="Buraya yazabilirsiniz"></textarea>
+        </div>
+        <div class="progress-buttons">
+          <button type="button" onclick="prev()" class="progress-button disabled" id="prev-button">⬅ Geri</button>
+          <button type="button" onclick="next()" class="progress-button" id="next-button" disabled>İleri ➡</button>
+          <button type="submit" class="progress-button" id="submit-button" style="display: none">Gönder ↩</button>
+        </div>
+        <div class="step" id="step6">
+          <h2>Talebiniz hakkında eklemek istedikleriniz var mı?</h2>
+          <a href="index.html">Anasayfaya Dön</a>
+        </div>
+      </div>
+    </section>
+    <!-- Step Form Finish -->
+
+    <!-- My JS -->
+    <script src="dist/js/step-form.js"></script>
+  </body>
+</html>
