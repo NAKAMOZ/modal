@@ -208,30 +208,3 @@ step4Textbox.addEventListener("keydown", (e) => {
     e.preventDefault();
   }
 });
-
-submitBtn.addEventListener("click", () => {
-  var checkboxes = document.getElementsByName("service[]");
-  var sirket = document.querySelector("#sirket").value;
-  var email = document.querySelector("#email").value;
-  var tel = document.querySelector("#tel").value;
-  var talep = document.querySelector("#talep-mesaj").value;
-  var services = "";
-  for (var i = 0, n = checkboxes.length; i < n; i++) {
-    if (checkboxes[i].checked) {
-      services += "," + checkboxes[i].value;
-    }
-  }
-  services = services.substring(1);
-  const xhr = new XMLHttpRequest();
-  // Initialize the request
-  xhr.open("POST", "https://www.arnoma.com.tr/mailgonder", true);
-  // Set content type
-  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  // Durum Kontrol
-  xhr.onreadystatechange = function () {
-    if (xhr.status == 200) {
-      next();
-    }
-  };
-  xhr.send("service=" + services + "&sirket=" + sirket + "&email=" + email + "&tel=" + tel + "&talep=" + talep + "&ajax=true");
-});
